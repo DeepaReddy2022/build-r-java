@@ -7,7 +7,7 @@ MAINTAINER support@odysseusinc.com
 ## gnupg is needed to add new key
 RUN apt-get update && apt-get install -y gnupg2 software-properties-common libgdal-dev libproj-dev libbz2-dev
 
-## Install Java
+## Install Java and git
 RUN apt-get install -y git openjdk-8-jdk wget
 
 ## make sure Java can be found in rApache and other daemons not looking in R ldpaths
